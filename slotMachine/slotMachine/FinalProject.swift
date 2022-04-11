@@ -14,7 +14,6 @@ class GamesModel: ObservableObject {
    private let arrayEmoji = ["🤪", "😎", "😜", "🥶", "😷", "🤯"]
     private var timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     
-    
     init() {
         timer
             .receive(on: RunLoop.main)
@@ -36,7 +35,6 @@ class GamesModel: ObservableObject {
             .assign(to: \.buttonText, on: self)
             .store(in: &cancellables)
     }
-    
     private func random() {
         // поставить guard,чтобы  он был остановлен !!! 
         guard run else {return}
@@ -61,7 +59,6 @@ class GamesModel: ObservableObject {
     
     
 }
-
 struct Slot <Content: View>: View {
     var content: () -> Content
     init(@ViewBuilder content: @escaping () -> Content) { self.content = content }
@@ -69,15 +66,11 @@ struct Slot <Content: View>: View {
     var body: some View {
         content()
             .font(.system(size: 80))
+        // посмотреть про новые анимации
             .animation(.easeIn(duration: 1.5))
             .id(UUID())
     }
 }
-
-
-
-
-
 
 struct FinalProject: View {
     @ObservedObject private var gameMod = GamesModel()
@@ -113,15 +106,11 @@ struct FinalProject: View {
                         //.background(.clear)
                        // .foregroundColor(.black)
                         // .background().shadow(color: .red, radius: 20.0, x: 10, y: 10)
-                    
-                        
                 }
-  
-}
+            }
         }
     }
 }
-    
 struct FinalProject_Previews: PreviewProvider {
     static var previews: some View {
         FinalProject()
