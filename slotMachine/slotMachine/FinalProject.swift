@@ -11,8 +11,8 @@ import Combine
 // Версия с таймером!
 class GamesModel: ObservableObject {
     private var cancellables = Set<AnyCancellable>()
-   private let arrayEmoji = ["🤪", "😎", "😜", "🥶", "😷", "🤯"]
-    private var timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
+    let arrayEmoji = ["🤪", "😎", "😜", "🥶", "😷", "🤯"]
+     var timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     
     init() {
         timer

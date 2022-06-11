@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F79EBDCC28100D1D00D12CBA /* TestSlotMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79EBDCB28100D1D00D12CBA /* TestSlotMachine.swift */; };
+		F79EBDD3281031A100D12CBA /* TestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79EBDD2281031A100D12CBA /* TestViewModel.swift */; };
 		F7F486012802E49900DCC13A /* slotMachineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F486002802E49900DCC13A /* slotMachineApp.swift */; };
 		F7F486032802E49900DCC13A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F486022802E49900DCC13A /* ContentView.swift */; };
 		F7F486052802E49900DCC13A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7F486042802E49900DCC13A /* Assets.xcassets */; };
@@ -14,7 +16,20 @@
 		F7F4860F2804A3BA00DCC13A /* FinalProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F4860E2804A3BA00DCC13A /* FinalProject.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F79EBDCD28100D1D00D12CBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7F485F52802E49900DCC13A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7F485FC2802E49900DCC13A;
+			remoteInfo = slotMachine;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		F79EBDC928100D1D00D12CBA /* TestSlotMachine.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestSlotMachine.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F79EBDCB28100D1D00D12CBA /* TestSlotMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSlotMachine.swift; sourceTree = "<group>"; };
+		F79EBDD2281031A100D12CBA /* TestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewModel.swift; sourceTree = "<group>"; };
 		F7F485FD2802E49900DCC13A /* slotMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = slotMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7F486002802E49900DCC13A /* slotMachineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = slotMachineApp.swift; sourceTree = "<group>"; };
 		F7F486022802E49900DCC13A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -24,6 +39,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F79EBDC628100D1D00D12CBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F7F485FA2802E49900DCC13A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -34,10 +56,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F79EBDCA28100D1D00D12CBA /* TestSlotMachine */ = {
+			isa = PBXGroup;
+			children = (
+				F79EBDCB28100D1D00D12CBA /* TestSlotMachine.swift */,
+				F79EBDD2281031A100D12CBA /* TestViewModel.swift */,
+			);
+			path = TestSlotMachine;
+			sourceTree = "<group>";
+		};
 		F7F485F42802E49900DCC13A = {
 			isa = PBXGroup;
 			children = (
 				F7F485FF2802E49900DCC13A /* slotMachine */,
+				F79EBDCA28100D1D00D12CBA /* TestSlotMachine */,
 				F7F485FE2802E49900DCC13A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				F7F485FD2802E49900DCC13A /* slotMachine.app */,
+				F79EBDC928100D1D00D12CBA /* TestSlotMachine.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +106,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F79EBDC828100D1D00D12CBA /* TestSlotMachine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F79EBDD128100D1D00D12CBA /* Build configuration list for PBXNativeTarget "TestSlotMachine" */;
+			buildPhases = (
+				F79EBDC528100D1D00D12CBA /* Sources */,
+				F79EBDC628100D1D00D12CBA /* Frameworks */,
+				F79EBDC728100D1D00D12CBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F79EBDCE28100D1D00D12CBA /* PBXTargetDependency */,
+			);
+			name = TestSlotMachine;
+			productName = TestSlotMachine;
+			productReference = F79EBDC928100D1D00D12CBA /* TestSlotMachine.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F7F485FC2802E49900DCC13A /* slotMachine */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7F4860B2802E49900DCC13A /* Build configuration list for PBXNativeTarget "slotMachine" */;
@@ -100,6 +151,10 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					F79EBDC828100D1D00D12CBA = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = F7F485FC2802E49900DCC13A;
+					};
 					F7F485FC2802E49900DCC13A = {
 						CreatedOnToolsVersion = 13.2;
 					};
@@ -119,11 +174,19 @@
 			projectRoot = "";
 			targets = (
 				F7F485FC2802E49900DCC13A /* slotMachine */,
+				F79EBDC828100D1D00D12CBA /* TestSlotMachine */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F79EBDC728100D1D00D12CBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F7F485FB2802E49900DCC13A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,6 +199,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F79EBDC528100D1D00D12CBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F79EBDD3281031A100D12CBA /* TestViewModel.swift in Sources */,
+				F79EBDCC28100D1D00D12CBA /* TestSlotMachine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F7F485F92802E49900DCC13A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -148,7 +220,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		F79EBDCE28100D1D00D12CBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7F485FC2802E49900DCC13A /* slotMachine */;
+			targetProxy = F79EBDCD28100D1D00D12CBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		F79EBDCF28100D1D00D12CBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NX4Z863YP5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = voitivit.TestSlotMachine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/slotMachine.app/slotMachine";
+			};
+			name = Debug;
+		};
+		F79EBDD028100D1D00D12CBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NX4Z863YP5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = voitivit.TestSlotMachine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/slotMachine.app/slotMachine";
+			};
+			name = Release;
+		};
 		F7F486092802E49900DCC13A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -326,6 +442,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F79EBDD128100D1D00D12CBA /* Build configuration list for PBXNativeTarget "TestSlotMachine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F79EBDCF28100D1D00D12CBA /* Debug */,
+				F79EBDD028100D1D00D12CBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F7F485F82802E49900DCC13A /* Build configuration list for PBXProject "slotMachine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
